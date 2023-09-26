@@ -1,0 +1,14 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class barang extends Model
+{
+    use HasFactory;
+    
+    protected $table = 'barang';
+    protected $fillable = ['kode_barang', 'produk_id', 'nama_baarang', 'satuan', 'harga_jual', 'stok', 'ditarik', 'user_id'];
+}
